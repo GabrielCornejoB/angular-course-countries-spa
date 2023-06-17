@@ -1,0 +1,13 @@
+<h2>Countries</h2>
+<hr />
+<ul class="list-group">
+  <li
+    *ngFor="let route of ['', 'about', 'contact']"
+    [routerLink]="route"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item"
+  >
+    {{ route || "home" | titlecase }} Page
+  </li>
+</ul>
