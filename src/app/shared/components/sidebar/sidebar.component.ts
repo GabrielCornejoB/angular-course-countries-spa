@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styles: [],
 })
 export class SidebarComponent {
-  public routes: string[] = ['', 'about', 'contact'];
+  public routes: string[] = [
+    '',
+    'about',
+    'contact',
+    'countries/by-capital',
+    'countries/by-country',
+    'countries/by-region',
+  ];
 }
